@@ -24,3 +24,13 @@ This project leverages the power of genetic algorithms to provide an efficient a
 + tkinter
 + math
 + random
+
+## Acknowledgement
+We would like to express our sincere gratitude to Toyoda, J., & Takeyasu, K.
+for their insightful article, which served as the primary reference for the development of this repository.
+Their work has provided invaluable guidance and inspiration in solving the Cutting Stock Problem using genetic algorithms.
+<br>
+<br>
+
+>***Toyoda, J., & Takeyasu, K. (2007). A Genetic Algorithm Applied to Cutting Stock Problem for Timber Precutting.
+Journal of Economics, Business and Law, 10, 33-54.***
