@@ -472,6 +472,18 @@ buttonConfirm = tk.Button(frame1, text='Konfirmasi', bg=color['main'], fg=color[
                           relief=tk.FLAT, font=(typeface, 10, 'bold'), command=main_program)
 buttonConfirm.pack(padx=20, fill=tk.X)
 
+# add hover effect to buttonConfirm
+def btnConfirm_enter(e)->None:
+    e.widget['bg']='#ffffed'
+    e.widget['fg']=color['main']
+
+def btnConfirm_leave(e)->None:
+    e.widget['bg']=color['main']
+    e.widget['fg']=color['bg']
+
+buttonConfirm.bind('<Enter>', btnConfirm_enter)
+buttonConfirm.bind('<Leave>', btnConfirm_leave)
+
 lblDuide = tk.Label(frame1, text=f'Panduan Input',
                    bg=color['bg'], fg=color['main'],
                    font=(typeface, 18, 'bold')).pack(padx=30, pady=(20,12))
